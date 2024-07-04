@@ -31,6 +31,8 @@ class Chronometer {
   }
 
   reset() {
+    this.currentTime = 0;
+
     const minutes = this.computeTwoDigitNumber(this.getMinutes());
     document.getElementById('minDec').innerHTML = minutes[0];
     document.getElementById('minUni').innerHTML = minutes[1];
